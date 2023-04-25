@@ -1,0 +1,46 @@
+/* @theme mofmof */
+
+@import 'default';
+section:not(.title) {
+  background-image: url(./images/background.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+section.title {
+  text-align: center;
+  background-color: #41b7cd;
+  color: white;
+  background-image: url(./images/sheep.png);
+  background-position: bottom 20px right 40px;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+section.title h1 {
+  color: white;
+  font-size: 70px;
+}
+
+section.title > header,
+section.title > footer {
+  color: transparent;
+}
+
+section:not(.title) > header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 10px solid #41b7cd;
+  color: transparent;
+}
+
+section:not(.title) > footer {
+  width: 100%;
+  height: 60px;
+  background-image: url(./images/logo.png);
+  background-position: bottom 10px left 10px;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  color: transparent;
+}
