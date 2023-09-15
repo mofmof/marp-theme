@@ -1,13 +1,63 @@
 /* @theme mofmof */
 
-@import 'default';
-section:not(.title) {
+@import "default";
+
+section {
+  justify-content: flex-start;
+  padding: 60px;
   background-image: url(https://raw.githubusercontent.com/mofmof/marp-theme/main/images/background.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 500px;
+  font-family: "Yu Gothic Medium", "YuGothic", "", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
 }
+section > header,
+section > footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+section > header {
+  top: 0;
+  border-top: 10px solid #41b7cd;
+  color: transparent;
+}
+section > footer {
+  height: 60px;
+  background-image: url(https://raw.githubusercontent.com/mofmof/marp-theme/main/images/logo.png);
+  background-position: bottom 10px left 10px;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  color: transparent;
+}
+section > h1,
+section > h2,
+section > h3,
+section > h4,
+section > h5,
+section > h6 {
+  font-weight: normal;
+}
+section > h1,
+section > h2,
+section > h3,
+section > h4,
+section > h5,
+section > h6,
+section strong {
+  color: #3794a5;
+}
+section code {
+  color: #3794a5;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 section.title {
+  justify-content: center;
   text-align: center;
   background-color: #41b7cd;
   color: white;
@@ -16,31 +66,12 @@ section.title {
   background-repeat: no-repeat;
   background-size: 200px;
 }
-section.title h1 {
-  color: white;
-  font-size: 70px;
-}
-
 section.title > header,
 section.title > footer {
   color: transparent;
+  background: none;
 }
-
-section:not(.title) > header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top: 10px solid #41b7cd;
-  color: transparent;
-}
-
-section:not(.title) > footer {
-  width: 100%;
-  height: 60px;
-  background-image: url(https://raw.githubusercontent.com/mofmof/marp-theme/main/images/logo.png);
-  background-position: bottom 10px left 10px;
-  background-repeat: no-repeat;
-  background-size: 250px;
-  color: transparent;
+section.title h1 {
+  color: white;
+  font-size: 70px;
 }

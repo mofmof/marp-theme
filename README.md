@@ -14,32 +14,6 @@ VSCodeの場合
 }
 ```
 
+## サンプル
 
-この設定をして、以下のようなmarkdownファイルを作成できます。
-
-```
----
-marp: true
-theme: mofmof
-header: mofmof
-footer: mofmof
----
-
-<!-- _class: title -->
-
-# サンプル
-
----
-
-# すごいぞMarp
-
-1. 1
-2. 2
-3. 3
-
-```
-
-こんなデザインです。
-
-![image](https://user-images.githubusercontent.com/6434981/235052761-0e55e43f-aef7-416b-98ce-d3d0696bf7ea.png)
-
+- [01](./examples/01)
